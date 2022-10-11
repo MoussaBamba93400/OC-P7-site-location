@@ -1,0 +1,84 @@
+.collapse {
+    display: flex;
+    flex-direction: column; 
+    padding-bottom: 0px;
+    margin: 0px;
+   border: 1px solid black;
+   min-height: 2vh;
+}
+
+.collapse-title {
+   border: 1px solid black;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 40vw;
+   border-radius: 8px;
+   padding-left: 0.7vw;
+   padding-top: 1vh;
+   padding-bottom: 1vh;
+   color: white;
+   background-color: #FF6060;
+   margin: 0px;
+}
+
+.collapse-text {
+    margin-top: 0px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    padding-top: 2.5vh;
+    padding-left: 0.7vw;
+    font-size: 1rem;
+    width: 40vw;
+    background-color: rgb(246, 246, 246);
+    transform-origin: top center;
+    transition: all ease-in-out 500ms;
+    transform: scaleY(1);
+}
+
+
+
+
+
+.collapse span {
+    margin-right: 1.3vw;
+    font-size: 1.3vw;
+    transform-origin: 60% 50%;
+    transform: rotate(90deg);
+    transition: all 500ms;
+}
+
+
+.collapse span:active {
+    transform: rotate(-90deg)
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+
+    .collapse {
+        width: 100%;
+    }
+
+    .collapse p{
+        width: 100%;
+    }
+
+    .collapse-title {
+        background-color: black;
+        width: 30vw;
+    }
+
+    .collapse-text {
+        font-size: 0.7rem; 
+    }
+
+    .collapse span {
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,72 @@
+.location {
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(53, 39, 39);
+    border-radius: 10px;
+    height: 45vh;
+    width: 25vw;
+}
+
+.location:hover {
+    cursor: pointer;
+}
+
+.location img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+.location-title {
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 35px;
+    height: 7vh;
+    left: 30px;
+    width: 40%;
+    color: white;
+}
+
+
+@media screen and (max-width: 1390px) {
+    .location {
+        width: 23vw;
+    }
+
+    .location-title  {
+        width: 35%;
+    }
+}
+
+
+@media screen and (max-width: 1160px) {
+    .location {
+        width: 30vw;
+        bottom: 45px;
+    }
+
+    
+}
+
+@media screen and (max-width: 885px) {
+    .location {
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .location {
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .location {
+        width: 100vw;
+    }
+
+    .location-title {
+        width: 50%;
+    }
+}

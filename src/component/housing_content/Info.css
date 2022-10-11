@@ -1,0 +1,166 @@
+.info-container {
+    border: 1px solid rgb(206, 25, 25);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.housing-title {
+    width: 45vw;
+    font-size: 2vw;
+    color: rgb(234, 99, 99);
+    margin-bottom: 3px;
+}
+
+.housing-location {
+    margin-top: 8px;
+    border: 1px solid black;
+    font-weight: 700;
+    width: fit-content;
+    color: #FF6060;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    padding: 0; 
+    width: fit-content;
+    list-style-type: none;
+}
+
+.tags li {
+    font-size: 1vw;
+    margin-right: 6px;
+    padding-inline: 10px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    border-radius: 13px;
+    height: fit-content;
+    white-space: nowrap;
+    color: white;
+    background-color: #FF6060;
+}
+
+.info-host {
+    margin-top: 2vh;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.name-picture {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 11vw;
+}
+
+.name-picture img{
+margin-right: 0px;
+height: 27%;
+width: 27%;
+border-radius: 50%;
+} 
+
+.name-picture p {
+    font-size: 1.5vw;
+    border: 1px solid red;
+    color: #FF6060;
+    font-weight: 600;
+    width: 5vw;
+    margin: 0;
+    margin-right: 12px;
+    padding-left: 1vw;
+}
+
+.ratings {
+    font-size: 1.4vw;
+    align-self:flex-end;
+    height: fit-content;
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+
+.stars {
+    margin-inline: 0.2vw;
+}
+
+.valid {
+   color: #FF6060;
+}
+
+.none-valid {
+    color: rgb(224, 217, 217);
+}
+
+@media screen and (max-width: 915px) {
+    .tags {
+        width: 32vw;
+    }
+
+    .tags li {
+        font-size: 1.1vw;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .info-container {
+        flex-direction: column;
+    }
+
+
+    .housing-title {
+        font-size: 3.3vw;
+        width: 70vw;
+    }
+
+    .housing-location {
+        font-size: 2.5vw;
+    }
+
+    .info-host {
+        margin-top: 0;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .tags {
+
+    } 
+
+    .tags li {
+        font-size: 2.3vw;
+    }
+
+    .name-picture {
+        width: 20vw;
+    }
+
+    .name-picture p {
+        font-size: 3vw;
+        margin-right: 6vw;
+    }
+
+    .name-picture img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .ratings {
+       font-size: 3vw;
+       align-self: center;
+       margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    
+}
