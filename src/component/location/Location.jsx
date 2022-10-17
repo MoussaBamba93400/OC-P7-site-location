@@ -4,7 +4,7 @@ import './Location.css'
 
 const Location = ({locationObj}) => {
    
-  function locationPage(objLocation) {
+  function locationPage() {
      window.location.href = `/logement/${locationObj.id}` 
   }
 

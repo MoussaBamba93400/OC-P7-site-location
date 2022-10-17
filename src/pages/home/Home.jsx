@@ -1,7 +1,7 @@
 import './Home.css'
 import React from 'react'
 import Header from '../../component/header/Header'
-import Banner from '../../component/banner/Banner'
+import bannerImg from '../../assets/IMG_background.png'
 import Location from '../../component/location/Location'
 import Footer from '../../component/footer/Footer'
 import { useEffect, useState } from 'react'
@@ -30,7 +30,11 @@ const Home = () => {
   return (
     <div className='home-page'>
       <Header />
-      <Banner />
+     <section className='banner'>
+      <img className='banner-img' src={bannerImg} alt="banner cover"></img>
+      <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
+    </section>
+
       <main className='location_container'>
         {
           locationData.map((obj) => <Location locationObj={obj} />)

@@ -1,14 +1,29 @@
 import React from 'react'
 import './Collapse.css'
 import {IoIosArrowForward} from 'react-icons/io'
+import { useState } from 'react'
 
-const Description = () => {
+const Collapse = ({title, content}) => {
+  const [ Toggle, setToggle] = useState('collapse-text-close')
+  const [Icon, setIcon] = useState('inactive')
+
+
+  // function use for toggling between the collapse being close or open 
+  function toggle() {
+    setToggle( Toggle === 'collapse-text-close'? "": 'collapse-text-close')
+    setIcon(Icon === 'inactive'? "active": 'inactive')
+  }
+
+  function test(arr) {
+    return arr?.map((elem, index) => <li className='equipments' key={index}>{elem}</li>)
+  }
+
   return (
     <div className='collapse'>
-      <div className='collapse-title'>Description <span><IoIosArrowForward /></span></div>
-      <div className='collapse-text collapse-text-close'>pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </div>
+      <div className='collapse-title'>{title} <span onClick={() => toggle() }  className={Icon}><IoIosArrowForward /></span></div>
+      <div className={"collapse-text " + Toggle } >{Array.isArray(content)? test(content): content}</div>
     </div>
   )
 }
 
-export default Description
+export default Collapse

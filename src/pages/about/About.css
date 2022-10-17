@@ -1,4 +1,38 @@
 .about-page {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.about-banner {
+    margin-top: 7vh;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.about-banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-collapse {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 390px) {
+    .about-page {
+        
+    }
+
+    .about-banner  {
+        border: 1px solid black;
+        width: 100%;
+       height: 40vh;
+    }
+
+    .about-banner img {
+        height: 40vh;
+    }
 }

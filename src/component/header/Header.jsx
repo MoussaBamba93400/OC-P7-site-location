@@ -1,9 +1,23 @@
 import React from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 
 const Header = (props) => {
+  const currLocation = useLocation();
+  const linkHomeStyle = {
+    textDecoration: currLocation.pathname === "/home"? "": "none",
+    color: "#FF6060", 
+  }
+
+  const linkAboutStyle = {
+    textDecoration: currLocation.pathname === "/about"? "": "none",
+    color: "#FF6060",
+
+  }
+  console.log(currLocation)
+  
   return (
     <header className='header'>
         <nav className='navbar_header '>
@@ -17,8 +31,8 @@ const Header = (props) => {
 </div>
 
             <div className="nav-link">
-              <Link to='/'>Accueil</Link>
-              <Link to='/about'>A propos</Link>
+              <Link style={linkHomeStyle}  to='/'>Accueil</Link>
+              <Link style={linkAboutStyle} to='/about'>A propos</Link>
             </div>
         </nav>
     </header>
