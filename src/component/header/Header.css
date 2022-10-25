@@ -44,6 +44,13 @@
 }
 
 
+@media screen and (max-width: 500px) {
+    .nav-link {
+        width: 41vw;
+    }
+}
+
+
 @media screen and (max-width: 390px) {
     .nav-link {
         width: 40.14vw;
@@ -53,5 +60,20 @@
     .logo {
         height: 40px;
         width: 125px;
+    }
+}
+
+
+@media screen and (max-width: 335px) {
+
+    .nav-link {
+        width: 40vw;
+        font-size: 4.5vw;
+    }
+
+
+    .logo {
+        height: 40px;
+        width: 100px;
     }
 }

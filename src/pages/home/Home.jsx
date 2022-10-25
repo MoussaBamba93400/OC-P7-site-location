@@ -23,7 +23,7 @@ const Home = () => {
       setData(data)
     })
     .catch(error => console.log(error) )
-  })
+  }, [])
 
 
 

@@ -1,6 +1,7 @@
 .home-page {
     padding-left: 100px;
     padding-right: 100px;
+    overflow-x: hidden;
 }
 
 
@@ -95,6 +96,18 @@
     }
 }
 
+@media screen and (max-width: 435px) {
+    .home-page {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .location_container {
+       padding-left: 15%;
+       
+    }
+}
+
 
 
 @media screen and (max-width: 390px) {
@@ -126,3 +139,5 @@
         padding-left: 0%;
     }
 }
+
+

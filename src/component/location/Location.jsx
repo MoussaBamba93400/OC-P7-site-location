@@ -1,15 +1,14 @@
 import React from 'react'
 import './Location.css'
+import {useNavigate} from 'react-router-dom'
 
 
 const Location = ({locationObj}) => {
-   
-  function locationPage() {
-     window.location.href = `/logement/${locationObj.id}` 
-  }
+   const navigate = useNavigate()
+  
 
   return (
-    <article className='location' onClick={locationPage}>
+    <article className='location' onClick={() => navigate(`/logement/${locationObj.id}`)}>
         <img src={locationObj.cover} alt="" />
       <p className='location-title'>{locationObj.title}</p>
     </article>
